@@ -15,6 +15,22 @@
             r1: Row { c1: 0u8, c2: 0u8, c3: 0u8 },
             r2: Row { c1: 0u8, c2: 0u8, c3: 0u8 },
             r3: Row { c1: 0u8, c2: 0u8, c3: 0u8 },
+    // A tic tac toe board.
+    // - `r1` : The first row in the board.
+    // - `r2` : The second row in the board.
+    // - `r3` : The third row in the board.
+    struct Board {
+        r1: Row,
+        r2: Row,
+        r3: Row,
+    }
+
+    // Returns an empty board.
+    transition new() -> Board {
+        return Board {
+            r1: Row { c1: 0u8, c2: 0u8, c3: 0u8 },
+            r2: Row { c1: 0u8, c2: 0u8, c3: 0u8 },
+            r3: Row { c1: 0u8, c2: 0u8, c3: 0u8 },
         };
     }
 
